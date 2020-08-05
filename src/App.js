@@ -2,6 +2,8 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import './App.css';
 
+import Cipher from "./Cipher";
+
 function App() {
   const [date, setDate] = useState(null);
   useEffect(() => {
@@ -12,9 +14,20 @@ function App() {
     }
     getDate();
   }, []);
+
+
+
+
   return (
     <main>
       <h1>Create React App + Go API</h1>
+
+      <h2>TEST CIPHER</h2>
+      <h3>
+      <Cipher/>
+      </h3>
+       
+
       <h2>
         Deployed with{' '}
         <a
@@ -32,8 +45,11 @@ function App() {
           target="_blank"
           rel="noreferrer noopener"
         >
-          This project
+          This project. 
         </a>{' '}
+
+    
+        
         was bootstrapped with{' '}
         <a href="https://facebook.github.io/create-react-app/">
           Create React App
@@ -44,12 +60,19 @@ function App() {
         function. See{' '}
         <a href="/api/date">
           <code>api/date</code> for the Date API with Go
+
         </a>
+       
         .
       </p>
       <br />
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+      
+    
+      <p>
+      
+      
+
+      </p>
     </main>
   );
 }
